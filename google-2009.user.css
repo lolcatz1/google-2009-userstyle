@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google 2009
 @namespace      levi.google2009
-@version        2.8.0
+@version        2.8.1
 @description    Makes google.com (homepage + web search results) look like it did in August 2009. No favicons, no thumbnails, no icons; the AI Overview is folded behind a 2009-style [+] toggle. Modern blocks (knowledge panel, People also ask, Top stories, Videos) are rendered as plain 2009-style text.
 @author         leroy
 @preprocessor   uso
@@ -639,10 +639,11 @@
     flex: none !important;
     position: relative !important;
     left: 0 !important; top: 0 !important;
+    visibility: visible !important;
   }
   #searchform .A8SBwf:not(:has(.logo, #logo))::before { content: ""; }
 
-  #searchform .logo > a, #searchform .logo #logo { display: block !important; position: absolute !important; inset: 0 !important; width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; background: none !important; }
+  #searchform .logo > a, #searchform .logo #logo { display: block !important; position: absolute !important; inset: 0 !important; width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; background: none !important; visibility: visible !important; }
   #searchform .logo :is(img, svg, picture, span, div), #searchform #logo :is(img, svg, picture, span, div),
   #searchform :is(a.FgNLaf, .lJpQBb, img[src*="/logos/"], img[alt="Google"], svg[aria-label*="Google"]) { display: none !important; }
 
